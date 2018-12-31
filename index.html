@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        .sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-secondary">
+    <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 mr-0" href="#">Company name</a>
+      <input
+        class="form-control form-control-dark w-100"
+        type="text"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+      <div class="container-fluid">
+          <div class="row">
+              <nav class="col-sm-1 d-none d-md-block bg-light sidebar text-center">
+                <div class="sidebar-sticky">
+                  <ul class="nav flex-column h-75 d-flex justify-content-around">
+                    <li class="nav-item">
+                      <a href="" class="nav-link active"
+                        ><i class="fas fa-home fa-lg"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link"><i class="fas fa-fire fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link"><i class="fas fa-bolt fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link"
+                        ><i class="fas fa-user-lock fa-lg"></i
+                      ></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link"><i class="fas fa-video fa-lg"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main class="col-sm-11 px-4 bg-dark">
+                <div class="d-flex flex-column mt-2 h-100">
+                    <div class="card" style="width: 100%;height: 45%;">
+                        <div class="card-body h-100">
+                            <h5 class="card-title">Current Status</h5>    
+                            <div class="row mt-3 h-75">
+                                <div class="col-5 text-center">
+                                        <i class="fas fa-fire fa-10x text-success d-block m-5"></i>
+                                        <label>Normal</label>
+                                </div>
+                                <div class="col-7 bg-dark">
+                                       
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center" style="width: 100%;;height: 45%;">
+                            <div class="card mt-3 w-100">
+                                    <div class="card-body h-100">
+                                        <h5 class="card-title">Device Details</h5>
+                                        <table class="w-100 h-100 text-justify">
+                                            <tr>
+                                                <td>Serial Number:</td>
+                                                <td>xxxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Name:</td>
+                                                <td>xxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address:</td>
+                                                <td>xxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Device Type:</td>
+                                                <td>xxxxx</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Model</td>
+                                                <td>xxxx</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <div class="card mt-3 w-100 ml-3">
+                                    <div class="card-body h-100">
+                                        <h5 class="card-title">Building Historic Data</h5>
+                                        <ul class="nav nav-tabs">
+                                                <li class="nav-item">
+                                                  <a class="nav-link active" href="#">Alerts</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="nav-link" href="#">Charts</a>
+                                                </li>
+                                        </ul>
+                                        <table class="w-100 h-100">
+                                            <thead>
+                                                <th>Alert Name</th>
+                                                <th>Description</th>
+                                                <th>Date Time</th>
+                                                <th>Priority</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                    <td>xxxx</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </div>
+                    </div>
+             
+                </div>
+              </main>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
